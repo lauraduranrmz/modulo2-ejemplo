@@ -34,6 +34,18 @@ header, main{
     color:#0e0d0d ;
     text-transform: uppercase;
 }
+
+/*NAV*/
+.nav-principal{
+    background-color:#E0607E;
+    padding: 15px 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
 /*tarjeta*/
 .producto-tarjeta{
     width: 290px;
@@ -46,12 +58,14 @@ header, main{
     transition: transform .2s ease, box-shadow .2s ease;
     margin: 40px;
     display: inline-block;
+    /*Para que la badge absoluta se posicione dentro*/
+    position: relative;
 }
+/*Efecto al pasar el mouse*/
 
 .producto-tarjeta:hover{
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px #D36060;
-    padding-bottom: 20px;
 }
 
 /*imagen*/
@@ -62,6 +76,7 @@ header, main{
     padding: 10px;
 }
 
+/*Título del producto*/
 .producto-titulo{
     font-size: 25px;
     font-weight: bold;
@@ -70,12 +85,15 @@ header, main{
     padding-top: 20px;
 }
 
+/*descripción del producto*/
+
 .producto-desc{
     font-size: 15px;
     color: azure;
     margin: 20px 20px;
 }
 
+/*precio*/
 .producto-precio{
     font-size: 20px;
     font-weight: bold;
@@ -100,21 +118,38 @@ header, main{
 }
 
 .logo{
-    padding-top: 30px;
-    text-align: center;
     font-size: 45px;
+    font-weight: bold;
 }
+/*Menú de navegación*/
 
 .nav-lista{
-    padding-left: 50px;
-    list-style: none;
-    padding-bottom: 20px;
+    
+    list-style: none; 
+}
+
+.nav-lista a{
+    text-decoration: none;
+    color: #DBD3AD;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.nav-lista a:hover{
+    color:#333;
 }
 
 .catalogo{
+    padding-left: 20px;
     padding-top: 20px;
-    padding-left: 50px;
 }
+
+/* CONTENEDOR DE PRODUCTOS*/
+.catalogo-contenedor{
+    padding: 20px;
+}
+
+
 
 #entregas{
     padding-left: 50px;
