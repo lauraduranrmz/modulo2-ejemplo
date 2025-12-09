@@ -139,48 +139,91 @@ header, main{
     color:#333;
 }
 
-.catalogo{
-    padding-left: 20px;
-    padding-top: 20px;
-}
+
 
 /* CONTENEDOR DE PRODUCTOS*/
 .catalogo-contenedor{
     padding: 20px;
 }
 
-
-
-#entregas{
-    padding-left: 50px;
-    padding-bottom: 20px;
-    padding-top: 20px;
+.producto-badge{
+    position:absolute;
+    background-color: #E0607E;
+    top: 10px;
+    left: 10px;
+    color: azure;
+    padding: 5px 12px;
+    border-radius: 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+/*SECCIONES GENERALES*/
+section{
+    padding: 20px;
 }
 
-#acerca{
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-bottom: 20px;
+h2{
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-#contacto{
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-bottom: 20px;
+ul{
+    padding-left: 20px;
+    margin: 10px 0;
 }
 
-.contacto-aside{
-    padding-top: 20px;
-    padding-bottom: 20px;
-    
+li{
+    margin-bottom: 6px;
 }
 
-.pie-pagina{
-    padding-top: 20px;
-    padding-left: 50px;
-    padding-bottom: 20px;
+/*contacto en dos columnas*/
+.contacto-section {
+    margin-top: 40px ;
+}
+/*formulario*/
+.form-contacto{
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
 }
 
-#list-entregas{
-    padding-left: 50px;
+/*inputs y textarea del formulario*/
+.form-contacto input,
+.form-contacto textarea{
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 6px;
+
+}
+
+/*footer*/
+
+footer{
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    background-color: #D36060;
+    color: azure;
+}
+
+/*boton flotante position fixed*/
+
+.boton-carrito{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color:#0e0d0d;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 50px;
+    color: white;
+    z-index: 1500;
+    box-shadow: 0 4px 12px #333;
+    transition: .2s ease;
+    font-weight: bold;
+}
+
+.boton-carrito:hover{
+    background-color: #E0607E;
 }
