@@ -1,12 +1,38 @@
+/*RESET BÁSICO
+-Elimina márgenes y padding por defecto
+-Aplica box-sizing: border-box para que el ancho incluya padding/border
+*/
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Define colo de fondo y tipografía*/
 body{
     font-family: "Mulish", sans-serif;
     background-color: #DBD3AD;
+    color: #333;
+}
+
+/* Limitar ancho y centrar
+- header, main y footer no serán de ancho completo
+- max-width evita que la página se vea muy ancha
+- margin auto los coloca al centro del body
+*/
+
+header, main{
+    width: 100%;
+    max-width: 1200px;   /* puedes cambiarlo a 900, 1000, etc */
+    margin: 0 auto;
+}
+
+.top-banner{
+    background-color:#F6C5AF;
+    text-align: center;
+    padding: 6px 10px;
+    font-size: 15px;
+    color:#0e0d0d ;
+    text-transform: uppercase;
 }
 /*tarjeta*/
 .producto-tarjeta{
