@@ -44,6 +44,11 @@ header, main{
     position: sticky;
     top: 0;
     z-index: 1000;
+    /*agregando flexbox*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     
 }
 /*tarjeta*/
@@ -57,9 +62,9 @@ header, main{
     text-align: center;
     transition: transform .2s ease, box-shadow .2s ease;
     margin: 40px;
-    display: inline-block;
     /*Para que la badge absoluta se posicione dentro*/
     position: relative;
+    flex: 1 1 240px;
 }
 /*Efecto al pasar el mouse*/
 
@@ -126,6 +131,10 @@ header, main{
 .nav-lista{
     
     list-style: none; 
+    /*agregando flexbox*/
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .nav-lista a{
@@ -144,6 +153,10 @@ header, main{
 /* CONTENEDOR DE PRODUCTOS*/
 .catalogo-contenedor{
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
 }
 
 .producto-badge{
@@ -179,12 +192,23 @@ li{
 /*contacto en dos columnas*/
 .contacto-section {
     margin-top: 40px ;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.contacto-contenido, .contacto-aside{
+    flex: 1 1 280px;
 }
 /*formulario*/
 .form-contacto{
     background: white;
     padding: 20px;
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 /*inputs y textarea del formulario*/
