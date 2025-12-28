@@ -150,7 +150,7 @@ header, main{
     opacity: 1;
 }
 
-.destacado-btn{
+.btn{
     position: absolute;
     top: 70%;
     left: 50%;
@@ -167,7 +167,7 @@ header, main{
     cursor: pointer;
     border-style: none;
 }
-.destacado:hover .destacado-btn {
+.destacado:hover .btn {
     opacity: 1;
 }
 
@@ -431,6 +431,10 @@ li{
 }
 
 .card:hover .texto {
+    opacity: 1;
+}
+
+.card:hover .btn {
     opacity: 1;
 }
 
