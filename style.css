@@ -533,6 +533,28 @@ li{
 
 }
 
+/*localizar*/
+
+.localizar{
+    margin-top: 40px ;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.localizar-contenido, .localizar-aside{
+    flex: 1 1 280px;
+}
+
+.localizar-aside{
+    background: #d44567;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 /*footer*/
 
 footer{
