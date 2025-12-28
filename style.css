@@ -51,6 +51,86 @@ header, main{
     flex-wrap: wrap;
     
 }
+
+/*destacados*/
+
+.grid-destacados{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 160px;
+    gap: 10px;
+}
+.destacado {
+    position: relative;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+.d1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1 / 3;
+    background-image: url("https://gringa.com.br/cdn/shop/products/Bolsa-Michael-Kors-Saffiano-Jet-Set-Tote-Preto-Original-8729f.png?v=1641273201&width=960");
+    box-shadow: 0px 4px 10px #E0607E;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.d1:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px #D36060;
+}
+
+.d2{
+    grid-column:  3 / 5;
+    grid-row: 1 / 3;
+    background-image: url("https://es.static.designerexchange.com/product_images/es/Bolsos/Fendi/SHANFEN281069_1_XL.PNG");
+    box-shadow: 0px 4px 10px #E0607E;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.d2:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px #D36060;
+}
+
+.d3{
+    grid-column: 5 / 7;
+    grid-row: 1 / 3;
+    background-image: url("https://media.viskanassets.com/v2/sajaconordicprod/normal/Guess_HWJT9344750-Black_2.png");
+    box-shadow: 0px 4px 10px #E0607E;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.d3:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px #D36060;
+}
+
+.d4{
+    grid-column: 1 / 3;
+    grid-row: 3 / 5;
+    background-image: url("https://www.belutex.com/5631-home_default/pass-crossbody-de-united-by-blue.jpg");
+    box-shadow: 0px 4px 10px #E0607E;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.d4:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px #D36060;
+}
+.d5{
+    grid-column: 3 / 7;
+    grid-row: 3 / 5;
+    background-image: url("https://assets.portelo.shop/uploads/variants/product_image/image/20773976-43eb-452d-b3a7-a01fc3210da9/1715902320.png?format=webp");
+    box-shadow: 0px 4px 10px #E0607E;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.d5:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px #D36060;
+}
+
 /*tarjeta*/
 .producto-tarjeta{
     width: 290px;
