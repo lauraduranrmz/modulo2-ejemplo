@@ -306,9 +306,11 @@ li{
     gap: 10px;
 }
 .card {
+    position: relative;
     border-radius: 15px;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .c1{
@@ -407,6 +409,11 @@ li{
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px #D36060;
 }
+
+.card:hover .texto {
+    opacity: 1;
+}
+
 
 /*SECCION EQUIPO*/ 
 .equipo-section{
